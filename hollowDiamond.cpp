@@ -5,8 +5,7 @@ int main() {
     int n,m;
     cout << "Enter n : ";
     cin >> n;
-    m = n - 1;
-    
+
 
 
     for(int i=0; i<n; i++){
@@ -25,14 +24,14 @@ int main() {
         cout << endl;
     }
 
-    for(int i=0; i<m; i++){
+    for(int i=0; i<n-1; i++){
         for(int k=0; k<=i; k++){
             cout << " ";
         }
         cout << "*";
 
-        if (i != (m-1)) {
-            for(int j=0; j<(m - 2*i); j++){
+        if (i != n-2) {
+            for(int j=0; j<2*(n-i)-5; j++){ // NOTE: j<2*(n-i)-5; new logic**
                 cout << " ";
 
             }
